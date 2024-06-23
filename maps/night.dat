@@ -10,10 +10,12 @@ G/0000 0080 ...r..k2k2k.
 G/0000 -080 .i2i2i2i2i.
 X/x000 0180 .fdkei.
 G/0000 0150 .knos1knos1knos...
-G/0000 -080 .i.i.i.i.i.
-X/x000 0180 .fdkei.
-G/-100 0150 ..knos1knos1knos.
-G/0100 0150 ..knos1knos1knos.
+G/0000 0080 ...r..k2k2k.
+X/x000 y000 .....fdkei.
+G/0000 0000 .i2i2i2i2i.
+X/x000 y000 .....fdkei.
+G/0000 0000 .i2i2i2i2i.
+X/x000 y000 .....fdkei.
 
 G/0000 0300
 .>*;1
@@ -57,6 +59,20 @@ G/-100 0100 7soke
 G/-050 0100 7soke
 G/0050 0100 7snke
 G/0100 0100 7snke
+
+G/-100 0150 .soei.
+G/0100 0150 .snei.
+G/-100 0100 7sokei
+G/-050 0100 7sokei
+G/0050 0100 7snkei
+G/0100 0100 7snkei
+
+G/-100 0150 .soei.
+G/0100 0150 .snei.
+G/-100 0100 7sokei
+G/-050 0100 7sokei
+G/0050 0100 7snkei
+G/0100 0100 7snkei
 
 G/0000 0300
 .>*;3
