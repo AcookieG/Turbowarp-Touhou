@@ -189,6 +189,7 @@ G/0000 0050
 
 Here is a sequence i made to illustrate the text below. take it into account.
 the "header" is indeed made up of the first five lines, the first being difficulty, the three following being visual changes, and the "." being a pause of one second. The header should only be used once.
+feel free to try out different header conditions, as different songs, sprites and backgrounds depend on it. i will not make a wiki on it, but you can just try different numbers.
 
 the reoccuring symbols:
 "G/", "X/", and "E/" tell my decoder that the following two strings of three numbers are coordinates. G/0 is a positive x coord, G/- is a negative x coord, and X and E refer to player coordinates. For exemple, X/x000 0150 would send the information "go to player's x coordinate, and to y 0150".
@@ -262,7 +263,7 @@ X/0000 0170
 7+-_5ac5
 and improve on the difficulty by using previous patterns and modifying them. there should not be an overarching pattern, like using a then b then c etc..., as the pattern randomness will confuse the player, making it unusable
 
-ANY GENERATED PATTERN SYSTEM (for exemple, .cnce.) MUST HAVE AT LEAST TWO LETTERS IF IT IS NOT PART OF THE FIRST THREE SYSTEMS OR A *** SYSTEM. (.n. would be invalid, but .na. would be valid) IT IS *HEAVILY* RECOMMENDED TO HAVE AT LEAST THREE LETTERS AND FOR THE SYSTEM TO BE REPEATED THRICE, WITHE THE THIRD BEING SLIGHTLY DIFFERENT!!! (exemple: "A/060 150 .ei. G/060 150 .ei. G/00 130 .Kei.")
+MOST GENERATED PATTERN SYSTEMS (for exemple, .cnce.) MUST HAVE AT LEAST TWO LETTERS IF IT IS NOT PART OF THE FIRST THREE SYSTEMS OR A *** SYSTEM. (.n. would be invalid, but .na. would be valid) IT IS *HEAVILY* RECOMMENDED TO HAVE AT LEAST THREE LETTERS AND FOR THE SYSTEM TO BE REPEATED THRICE, WITHE THE THIRD BEING SLIGHTLY DIFFERENT!!! (exemple: "A/060 150 .ei. G/060 150 .ei. G/00 130 .kei.")
 
 
 Here are a bunch of ai-generated patterns.
