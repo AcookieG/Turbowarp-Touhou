@@ -7,13 +7,13 @@
 G/-100 0150 .knos.
 G/0100 0150 .knos.
 G/0000 0080 ...r..k2k2k.
-G/0000 -080 .i1i1i1i1i1.
+G/0000 -080 .i2i2i2i2i.
 X/x000 0180 .fdkei.
-G/0000 0150 .knos1knos1knos.
-G/0000 -080 .i1i1i1i1i1.
+G/0000 0150 .knos1knos1knos...
+G/0000 -080 .i.i.i.i.i.
 X/x000 0180 .fdkei.
-G/-100 0150 .knos1knos1knos.
-G/0100 0150 .knos1knos1knos.
+G/-100 0150 ..knos1knos1knos.
+G/0100 0150 ..knos1knos1knos.
 
 G/0000 0300
 .>*;1
