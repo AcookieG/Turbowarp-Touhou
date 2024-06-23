@@ -1,0 +1,302 @@
+008600
+1
+0
+02
+.
+
+G/-060 0140 .c.
+G/0060 0140 .c.
+G/0000 0150 .ce.
+G/0000 0300 .
+
+G/-060 0140 .c.
+G/0060 0140 .c.
+G/0000 0150 .ce.
+G/0000 0300 .
+
+G/-060 0140 .c.
+G/0060 0140 .c.
+G/0000 0150 .ce.
+G/0000 0300 .
+
+G/0000 0050
+>*;1
+
+G/-060 0140 .c2c2.c
+G/0060 0140 .c2c2.c
+G/0000 0100
+..5e2c+9e2c+9e2c+9c
+G/0000 0300 .>
+
+G/-060 0140 .c2c2.c
+G/0060 0140 .c2c2.c
+G/0000 0100
+..5e2c+9e2c+9e2c+9c
+G/0000 0300 .>
+
+G/-060 0140 .c2c2.c
+G/0060 0140 .c2c2.c
+G/0000 0100
+..5e2c+9e2c+9e2c+9c
+G/0000 0300 .>
+
+G/0000 0050
+>*;2
+
+X/x000 0170 7_5
+X/x000 0170 7_5
+X/x000 0170 7_5a5
+G/0000 0300 +5
+
+X/x000 0170 7_5
+X/x000 0170 7_5
+X/x000 0170 7_5a5
+G/0000 0300 +5
+
+G/0000 0050
+>*;3
+
+G/0000 0150 .d5i5e.
+G/0000 0075 .+ei6ae.5
+G/-100 0150 .cei.5
+G/0100 0150 .cei.5
+
+G/0000 0150 .d5i5e.
+G/0000 0075 .+ei6ae.5
+G/-100 0150 .cei.5
+G/0100 0150 .cei.5
+
+G/0000 0050
+>*;4
+
+G/0000 0150 .e1d
+1i1i1i1i3...
+X/x000 0180 .a3id.e.e.e.5
+X/x000 0180 .a3id.e.e.e.5
+X/x000 0180 .a3id.e.e.e.58>
+
+G/0000 0150 .e1d
+1i1i1i1i3...
+X/x000 0180 .a3id.e.e.e.5
+X/x000 0180 .a3id.e.e.e.5
+X/x000 0180 .a3id.e.e.e.58>
+
+G/0000 0150 .e1d
+1i1i1i1i3...
+X/x000 0180 .a3id.e.e.e.5
+X/x000 0180 .a3id.e.e.e.5
+X/x000 0180 .a3id.e.e.e.58>
+
+G/0000 0050
+>*;5
+
+G/0080 0050 .ig.5g..5
+G/-080 0050 .ig.5g...
+G/0000 0150 .dg.i.3
+
+G/0080 0050 .ig.5g..5
+G/-080 0050 .ig.5g...
+G/0000 0150 .dg.i.3
+
+G/0080 0050 .ig.5g..5
+G/-080 0050 .ig.5g...
+G/0000 0150 .dg.i.3
+
+G/0000 0050
+>*;6
+
+X/x000 0180 .a3h.
+X/x000 0180 .i.f.f.5
+X/x000 0180 .a3h.
+X/x000 0180 .i.f.f5.
+
+X/x000 0180 .a3h.
+X/x000 0180 .i.f.f.5
+X/x000 0180 .a3h.
+X/x000 0180 .i.f.f5.
+
+G/0000 0050
+>*;7
+
+.....
+!
+
+Here is a sequence i made to illustrate the text below. take it into account.
+the "header" is indeed made up of the first five lines, the first being difficulty, the three following being visual changes, and the "." being a pause of one second. The header should only be used once.
+
+the reoccuring symbols:
+"G/", "X/", and "E/" tell my decoder that the following two strings of three numbers are coordinates. G/0 is a positive x coord, G/- is a negative x coord, and X and E refer to player coordinates. For exemple, X/x000 0150 would send the information "go to player's x coordinate, and to y 0150".
+note: any y coord will most often be higher than 0000, but the x coord can be negative (G/-150 0100 is the inverse of G/0150 0100, as the - replaces a 0 sign.)
+X/x000 and X/y000 should only be used rarely, but when used, it must be a repetition. here is an exemple: 
+X/x000 0170
+7_5
+X/x000 0170
+7_5
+X/x000 0170
+7_5a5
+G/0000 0300
++5
+In the use of X/x000 or X/y000, X/x000 means go to player x coords, and X/y000 means go to player y coords.
+E/ is an inverse of X/: E/x000 means go to the inverse of player x coords, and E/y000 means go to the inverse of player y coords.
+in this sense, X/x000 y000 would mean go to player x coords and y coords.
+please note that X/y000 and E/x000 or E/y000 are almost never uèsed, i have only seen them used once.
+
+the dot "." is a spacer to wait 1 second, the dollar sign "$" waits 10 seconds, and any digit between 0 and 9 not preceeded by a Coordinate system indicates a spacer of 0 to 0.9 seconds. for exemple, the sequence "$..5" would indicicate "wait 12.5 seconds".
+
+the letters present in sequences such as .ce.d. are patterns and specific actions of varying difficulty.  The sequence ".5c." would indicate "wait 1.5 seconds, use the c pattern and wait 1 second". The sequence ".ane..e5c." would actually be a difficult pattern, which means "wait1, pattern a;n;e, wait 2, pattern e then wait 0.5 then pattern c then wait 1 second.
+
+The asterisk "*" is indeed a progression mark, as it signifies an increase in deifficulty pattern. the ; symbol is also used as a progression mark for a different reason: it boosts the player's stas. Finaly, the exclamation point "!" is the end of the whole action, and should be the last used character, similar to the heading.
+The ">" clears the screen, ready for a new sequence.
+
+it appears i have forgotten some info: The patterns "f", "z" and "t" have been erased. note that the single pattern "f" has been tranformed into three different patterns of equal difficulty, being "-", "+" and "_". The screen limits coordinates to x[180; -180] and y[170; 000], meaneing anything like "G/000 300" will make the sprite out of bounds. it is great for protection, but it does not allow for attacks, exept for "m", "n", "o", "p", "q", "r", and "s", as they do not require the main sprite to be inbounds. Please take this into account and re-generate the previous css file. I am sorry for the confusion.
+
+i will now add info to every attack. it is not required of you to generate a sequence, but only to show me what attack would be compatible and incompatible.
+patterns that can be used out of bounds will be specified with "OOB"
+each attack is part of a family, such as "kunai" or "rice". it only gives information about the shape of the visual effect. attacks of the same family might work well with each other.
+patterns marked with an * are harder than normal patterns. similar to bosses in video games and such.
+
+a color will be attributed befor the name letter, which can also be used to see the difficulty.
+blue=yellow, blue<red<purple<black<white
+
+red a TRI downwards bullets. Fast
+purple b KUNAI seeking bullets. 
+blue c RICE circle pattern, clears things in a short radius.
+red d RICE circle pattern, shorts radius, spiral. hard to evade. acts like a web, visually restraining the player with overwhelming visuals.
+yellow e CIRCLE circle pattern, clears things in a large radius.
+yellow + CIRCLE hexagonal pattern. always at the top of the screen. does not require the sprite to be inbounds but it is heavily recomended.
+yellow - CIRCLE variant of +, middle of the screen.
+yellow _ CIRCLE variant of +, bottom of the screen.
+purple g TRI a variant of d, easier to evade, but larger radius. Fast
+purple h RICE a variant of d, much harder to avoid if in radius, but shorter radius. acts like a web, visually restraining the player with overwhelming visuals.
+blue i RICE/CIRCLE shoots out 12 tiny sprites at equal distance of the main sprite. each tiny sprite then uses the c pattern. very similar in essence to the inexistant "f" pattern, or the sum of +, - and _. acts like a web, visually restraining the player with overwhelming visuals.
+black j OOB *** CIRCLE pentagram, spawns various seeking pentagrams. acts like a web, visually restraining the player with overwhelming visuals.
+blue k KUNAI circle pattern, clears things in a large radius. Fast
+black l *** RICE Rain pattern, shoots out icicles from the top of the screen to the bottom. extremely hard to avoid. depends on the posittion of the sprite.
+white m *** work in progress, do not use.
+blue n OOB RICE/SPRITE a tiny sprite that uses the b pattern on the left side of the screen.
+blue o OOB RICE/SPRITE a tiny sprite that uses the b pattern on the right side of the screen.
+red p OOB RICE/SPRITE a tiny sprite that comes from the center using the following pattern on itself. "...d$d$d$!"
+red q OOB RICE/SPRITE a tiny sprite that comes from the center using the following pattern on itself. "..a..a..a..!"
+black r OOB *** KUNAI/CIRCLE/SPRITE a dozen tiny sprites coming from all sides repeatedly using the i pattern on themselves. rplaces the rice from the i pattern with kunai.
+blue s OOB RICE/SPRITE a tiny sprite from both sides shooting multi-colored petals of rice. not effective at dealing damage, but estetically pleasing.
+black u *** KUNAI spawn a triple ring of kunai around the sprite, that scatter randomly at high speeds. looks nice.
+blue v RICE localized rain, shoots tiny dropplets of water from the sprite to the player. looks nice, but can become extremely difficult with other patterns.
+white w ****** RICE a rain of bullets at high velocity all accross the screen. very hard, looks nice. do not use more than one attack with this. overwhelming.
+black x ****** RICE the litteral "Bullet Hell", spins bullet around the sprite at higher and higher speeds until all of them are released at the same time, making for a very hard attack to counter.
+white y *** KUNAI Angel wings, similar to l but easier to predict and evade. can be paired with many other attacks for insanely difficult attacks.
+
+jumps like ".cae.nmc...cae." are very highly encouraged. the difficulty should gradually get higher and higher, but starting with patterns such as ".cd.i1i1i.", which visually overwhelm the player without exceeding the low difficulty level. A very important note is to keep within some patterns in the sequence. for exemple, if one of the easy patterns was ".ce.", a harder version could be ".kei." as k is a variant of c and i simply limits movement like a web. The use of repeated patterns throughout the generations is encouraged, as the player will already know its easier version, and will know how to approach a difficult variant of it.
+
+in short, keep track of how patterns interact, use repeated patterns like 
+G/-060 0140
+7ce5
+G/0060 0140
+7ce5
+X/0000 0170
+7+-_5ac5
+and improve on the difficulty by using previous patterns and modifying them. there should not be an overarching pattern, like using a then b then c etc..., as the pattern randomness will confuse the player, making it unusable
+
+ANY GENERATED PATTERN SYSTEM (for exemple, .cnce.) MUST HAVE AT LEAST TWO LETTERS IF IT IS NOT PART OF THE FIRST THREE SYSTEMS OR A *** SYSTEM. (.n. would be invalid, but .na. would be valid) IT IS *HEAVILY* RECOMMENDED TO HAVE AT LEAST THREE LETTERS AND FOR THE SYSTEM TO BE REPEATED THRICE, WITHE THE THIRD BEING SLIGHTLY DIFFERENT!!! (exemple: "A/060 150 .ei. G/060 150 .ei. G/00 130 .Kei.")
+
+
+Here are a bunch of ai-generated patterns.
+
+999999
+7
+0
+07
+.
+
+G/0000 0150
+*;;;;;;;.*
+.c.
+.n.
+.o.
+.p.
+.q.
+.r.
+.s.
+.u.
+.v.
+.w.
+.x.
+.y.
+.ce.
+.c2.
+.e1.
+.c2c.
+.e2c.
+.e2c+.
+..5e2.
+.e2c+9.
+.e2c+9e.
+.e2c+9e2.
+.e2c+9e2c.
+..5e2c+9.
+..5e2c+9e.
+..5e2c+9e2.
+..5e2c+9e2c.
+.e2c+9e2c+.
+..5e2c+9e2c+.
+..5e2c+9e2c+9.
+..5e2c+9e2c+9e.
+..5e2c+9e2c+9e2.
+.c.n.o.
+.p.q.r.
+.s.u.v.
+.w.x.y.
+.ce.c2.e1.
+.c2c.e2c.e2c+.
+..5e2.e2c+9.
+.e2c+9e.e2c+9e2.
+.e2c+9e2c..5e2c+9.
+..5e2c+9e2c+..5e2c+9e.
+..5e2c+9e2c+9..5e2c+9e2.
+.e2c+9e2c+9e..5e2c+9e2c.
+..5e2c+9e2c+9e2..5e2c+9e2c+$
+.c+..5e2c+9e2c+9e2c+.
+..5e2c+9e2c+9e2c+9..5e2c+9e2c+$
+..5e2c+9e2c+9e2c+9e..5e2c+9e2c+9$
+..5e2c+9e2c+9e2c+9e2..5e2c+9e2c+$
+.c+..5e2c+9e2c+9e2c+9e2c+.
+..5e2c+9e2c+9e2c+9e2c+..5e2c+9e2c+$
+..5e2c+9e2c+9e2c+9e2c+9..5e2c+9e2c+$
+..5e2c+9e2c+9e2c+9e2c+9e..5e2c+9e2c+$
+>
+.rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr>$$$
+
+$>
+$>a$>b$>c$>d$>e$>f.+.-._$>g$>h$>i$>j$>k$>l$>m$>n$>o$>p$>q$>r$>s$>u$>v$>w$>x$>y$>
+!
+
+when creating your own patterns, remember that Move directions (G/, X/ and E/) are not locked with certain combinations of attack patterns. It is absolutely fine to use ".a." with G/ or E/, and it is also fine to use OOB patterns even while the sprite is inbounds, or even using X/ and E/ movement. here is an exemple:
+
+G/0000 0150
+.ais.
+G/-100 -100
+.ais.
+G/0100 -100
+.ais.
+G/0000 0180
+.m
+G/0000 1000
+..r...
+
+when creating your patterns it is also important to look at the file presentation: if a line is too long, it is perfectly fine to go to the next line before the attack pattern. for exemple,
+
+G/0000 0150 .asie..dei.kei.asie..i1i1ik.p
+
+can be turned into:
+
+G/0000 0150 .asie..dei
+
+.kei.asie..i1i1ik.p
+
+or even simpler:
+
+G/0000 0150
+.asie..dei
+.kei.asie.
+.i1i1ik.p
+
+If the prompt "lis" is typed right before a long sequence, it will be asked of you to analyze its content. give info such as compatibility on OOB and describe a pattern. for exemple, the analisis of ".kei." would be: 1second pause, then a large kunai attack, then a large circle attack, then an overwhelming attack, then a pause. since it has more than Two Families or Colors of attacks (here is Kunai, Circle and Rice, but it only uses two colors; blue and yellow), it can be called a Complex Pattern (CPA), but not a High Complex Pattern (HCPA), as it does not use three colors AND three families. ".dei". for exemple would be HCPA, as it is red, yellow and blue, while being kunai, circle and rice.
