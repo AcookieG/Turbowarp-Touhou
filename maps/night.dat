@@ -4,16 +4,16 @@
 08
 .
 
-G/-100 0150 .knop5s.
-G/0100 0150 .knop5s.
+G/-100 0150 .knos.
+G/0100 0150 .knos.
 G/0000 0080 ...r..k2k2k.
 G/0000 -080 .i1i1i1i1i1.
 X/x000 0180 .fdkei.
-G/0000 0150 .knop5s1knop5s1knop5s.
+G/0000 0150 .knos1knos1knos.
 G/0000 -080 .i1i1i1i1i1.
 X/x000 0180 .fdkei.
-G/-100 0150 .knop5s1knop5s1knop5s.
-G/0100 0150 .knop5s1knop5s1knop5s.
+G/-100 0150 .knos1knos1knos.
+G/0100 0150 .knos1knos1knos.
 
 G/0000 0300
 .>*;1
@@ -23,19 +23,19 @@ G/0000 0160 .u...
 G/-100 0150 .so.
 G/0100 0150 .sn.
 G/-100 0100 .sok
-G/0000 0100 .nokp5
+G/0000 0100 .nok
 G/0100 0100 .snk
 
 G/-100 0150 .so.
 G/0100 0150 .sn.
 G/-100 0100 .sok
-G/0000 0100 .nokp5
+G/0000 0100 .nok
 G/0100 0100 .snk
 
 G/-100 0150 .so.
 G/0100 0150 .sn.
 G/-100 0100 .sok
-G/0000 0100 .nokp5
+G/0000 0100 .nok
 G/0100 0100 .snk
 
 G/0000 0300
